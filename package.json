@@ -1,0 +1,29 @@
+{
+    "name": "somata-flyd",
+    "version": "0.0.1",
+    "description": "Wrap Somata service events in a Flyd stream",
+    "homepage": "http://github.com/somata/somata-flyd",
+    "repository": {
+        "type": "git",
+        "url": "http://github.com/somata/somata-flyd.git"
+    },
+    "author": {
+        "name": "Sean Robertson",
+        "org": "Prontotype",
+        "url": "http://prontotype.us/"
+    },
+    "keywords": [
+        "somata",
+        "flyd"
+    ],
+    "main": "lib/index.js",
+    "scripts": {
+        "prepublish": "coffee -c -o lib src"
+    },
+    "dependencies": {
+        "flyd": "0.1.x",
+        "somata": "0.0.x"
+    }
+}
+
+
