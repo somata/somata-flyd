@@ -4,7 +4,8 @@ flyd = require 'flyd'
 class Client extends somata.Client
     subscribe: (service_name, type, args...) ->
         s$ = flyd.stream()
-        super service_name, type, args..., (err, event) -> s$ event
+        super service_name, type, args..., (event) -> s$ event
         return s$
 
 module.exports = {Client}
+
